@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form localStorage</title>
-
-  <script type="module" crossorigin src="/practice-mentor-1/form-localstorage.js"></script>
+  <title>Switch Theme</title>
+  <script type="module" crossorigin src="/practice-mentor-1/theme.js"></script>
   <link rel="modulepreload" crossorigin href="/practice-mentor-1/assets/modulepreload-polyfill-B5Qt9EMX.js">
   <link rel="stylesheet" crossorigin href="/practice-mentor-1/assets/styles-Bw7XNr5p.css">
 </head>
-<body>
+<body class="light">
   <p><a href="./index.html">Go Back</a></p>
-  
-  <h2>Задача 1</h2>
-  <form class="login-form">
-    <input type="email" name="email" />
-    <input type="password" name="password" />
-    <button name="button" type="submit">Login</button>
-  </form>
+
+  <div class="checkbox-thumb">
+    <input type="checkbox" id="checkbox" class="checkbox" />
+    <label class="theme-toggle" for="checkbox"></label>
+    <div class="checkbox-circle"></div>
+  </div>
 
 </body>
 </html>

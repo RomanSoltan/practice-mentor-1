@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                      */const s=document.querySelector("#checkbox"),e=document.querySelector("body"),t="theme";s.addEventListener("change",a);function a(c){c.target.checked?(e.classList.add("dark"),localStorage.setItem(t,"dark"),e.classList.remove("light")):(e.classList.add("light"),localStorage.setItem(t,"light"),e.classList.remove("dark"))}localStorage.getItem(t)==="dark"&&(e.classList.add("dark"),e.classList.remove("light"),s.checked=!0);
+//# sourceMappingURL=theme.js.map
