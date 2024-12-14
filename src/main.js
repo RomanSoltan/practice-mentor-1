@@ -38,6 +38,16 @@ function handleSubmit(event) {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
 
+  // Робимо логіку Logout
+  if (button.textContent === "Logout") {
+    event.target.reset();
+    localStorage.removeItem(LS_KEY);
+    button.textContent = "Login";
+    email.removeAttribute('readonly');
+    password.removeAttribute('readonly');
+    return;
+  }
+
   // зробимо перевірку на порожній рядок
   if (emailValue === '' || passwordValue === '') {
     return alert("Can't be empty fields!");
@@ -91,3 +101,6 @@ if (localStorage.getItem(LS_KEY)) {
 //   email.setAttribute("readonly", true);
 //   password.setAttribute("readonly", true);
 // }
+
+
+
