@@ -32,6 +32,7 @@ function getPrompt(value) {
   })
 } 
 
+// обробляємо роміс
 getPrompt(promptValue)
   .then(data => console.log(data))
   .catch(error => console.log(error.message));
