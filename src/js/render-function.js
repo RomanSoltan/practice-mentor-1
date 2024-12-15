@@ -3,12 +3,11 @@ const renderImages = (images) => {
   .map(
       image => `
       <li class="gallery__item">
-        <img class="gallery-img" src="${image.urls.small}" alt="${image.alt_description}">
+      <img class="gallery-img" src="${image.urls.small}" alt="${image.alt_description}">
       </li>
-    `
-    )
-    .join('');
-};
+      `
+  ).join("")
+}
 
 export default renderImages;
 

@@ -1,10 +1,10 @@
 import axios from "axios";
 
 export default class UnsplashAPI {
-  #BASE_URL = 'https://api.unsplash.com/photos';
+  #BASE_URL = 'https://api.unsplash.com/search/photos';
   #API_KEY = 'gcevo00lZKvSMKLnZZJPKYS5xNbpbsP_4i6E-BVlG58';
 
-  async getPopularPhoto(page) {
+  async getPopularPhotos(page) {
     const params = new URLSearchParams({
       query: "popular",
       page,
@@ -16,4 +16,5 @@ export default class UnsplashAPI {
     const { data } = await axios(`${this.#BASE_URL}?${params}`);
     return data;
   }
+
 }
